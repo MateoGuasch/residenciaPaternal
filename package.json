@@ -1,17 +1,26 @@
 {
   "name": "residenciapaternal",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Web informativa sobre el servicio de alquiler de habitaciones corresponidente a la empresa Residencia Paternal",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateoGuasch/residenciaPaternal.git"
+  },
+  "author": "Mateo Guasch",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateoGuasch/residenciaPaternal/issues"
+  },
+  "homepage": "https://github.com/MateoGuasch/proyectoFinal-residenciaPaternal#readme",
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.18"
+    "nodemon": "^2.0.18",
+    "bootstrap": "^5.2.0"
   }
 }
