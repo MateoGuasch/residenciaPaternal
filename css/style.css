@@ -134,7 +134,18 @@ html body {
     font-weight: bold;
     font-size: 3em;
     margin: 0.5rem 1rem;
-    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    animation-name: flecha;
+    animation-duration: 6s;
+    animation-iteration-count: infinite; }
+
+@keyframes flecha {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0); } }
   html body main #nuestrosServicios .nuestrosServicios {
     margin: auto; }
   html body main #nuestrosServicios div {
