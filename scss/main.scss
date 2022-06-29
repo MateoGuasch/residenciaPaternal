@@ -24,14 +24,87 @@ p{
     @extend %button
 };
 
+h3{
+    @extend %h3
+}
+
 // NESTING
 html{
     body{
         background-color: $colorSecundario;
         header{
             background-color: $colorPrincipal;
+            nav{
+                div{
+                    a{
+                        @include rowFlex;
+                        img{
+                            width: 20%;
+                        }
+                        h1{
+                            font-family: $fuenteNav;
+                            color: $colorTexto;
+                            font-weight: bold;
+                            margin: 0.25rem;
+                            font-size: 1em;
+                        }
+                    }
+                    button{
+                        i{
+                            color: $colorTexto;
+                        }
+                    }
+                    div{
+                        ul{
+                            li{
+                                .menuItem{
+                                    font-family: $fuenteNav;
+                                    color: $colorTexto;
+                                    text-align: center;
+                                }
+                                .menuItem:hover{
+                                    color: $colorAcento;
+                                    font-weight: bold;
+                                    text-decoration: underline;
+                                }
+                                .activeRojo{
+                                    color: $colorAcento;
+                                    font-weight: bold;
+                                    text-decoration: underline;
+                                }
+                                .dropDown{
+                                    background-color: $colorPrincipal;
+                                    border: none;
+                                    li{
+                                        a{
+                                            font-family: $fuenteNav;
+                                            color: $colorTexto;
+                                            text-align: center; 
+                                        }
+                                        a:hover{
+                                            color: $colorAcento;
+                                            font-weight: bold;
+                                            text-decoration: underline;
+                                        }
+                                        .activeRojo{
+                                            color: $colorAcento;
+                                            font-weight: bold;
+                                            text-decoration: underline;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         main{
+            .mainContainer{
+                height: $height;
+                @include columnFlex;
+                text-align: center;
+            }
             .container{
                 div{
                     h2{
@@ -39,12 +112,167 @@ html{
                         font-family: $fuente;
                         font-weight: bold;
                         text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                        margin-top: 1rem;
+                    }
+                }
+                div{
+                    .flecha{
+                        color: $colorTexto;
+                        font-weight: bold;
+                        font-size: 3em;
+                        margin: 0.5rem 1rem;
+                        text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+            #nuestrosServicios{
+                div{
+                    text-align: center;
+                    i{
+                        color: $colorAcento;
+                        font-weight: bold;
+                        font-size: 3em;
+                        margin: 0.5rem 1rem;
+                        text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+            .dropDownContainer{
+                @include columnFlex;
+                text-align: center;
+                div{
+                    img{
+                        width: 100%;
+                        margin: 2rem 0rem;
+                        border: 4px solid antiquewhite;
                     }
                 }
             }
         }
+        .contactoContainer{
+                @include columnFlex;
+                text-align: center;
+            div{
+                text-align: center;
+                a{
+                    text-decoration: none;
+                    i{
+                        margin: 0rem 0.5rem;
+                        color: $colorTexto;
+                        font-size: 2em;
+                    }
+                    i:hover{
+                        color: $colorAcento;
+                        font-weight: bold;
+                    }
+                }
+            }
+            form{
+                fieldset{
+                    div{
+                        @include columnFlex;
+                        label{
+                            font-family: $fuente;
+                            color: $colorTexto;
+                            font-weight: bold;
+                        }
+                        .button{
+                            margin: 1rem 0rem;
+                        }
+                        textarea{
+                            height: 5rem;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .infoContainer{
+            text-align: center;
+            margin-left: 1rem;
+            margin-top: 1rem;
+            border-left: 4px solid $colorAcento;
+            strong{
+                color: $colorAcento;
+                font-family: $fuente;
+            }
+            p{
+                text-align: start;
+                a{
+                    color: $colorAcento;
+                }
+            }
+            .sangria{
+                margin: 2rem;
+            }
+        }
         footer{
             background-color: $colorPrincipal;
+            .container{
+                .info{
+                    .logo{
+                        @include rowFlex;
+                        img{
+                            width: 20%;
+                            margin-top: 1rem;
+                        }
+                    }
+                    .direccion{
+                        margin: 1rem 0rem;
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    .contacto{
+                        margin: 1rem 0rem;
+                        a{
+                            text-decoration: none;
+                            color: $colorAcento;
+                            @include rowFlex;
+                        }
+                        p{
+                            a{
+                                display: block;
+                            }
+                        }
+                    }
+                    .links{
+                        a{
+                            text-decoration: none;
+                            color: $colorAcento;
+                            @include rowFlex; 
+                        }
+                    }
+                }
+                .copy{
+                    .borderTop{
+                        margin-top: 1rem;
+                        border-top: 1px solid antiquewhite;
+                        padding-top: 1rem;
+                        h4{
+                            font-size: 1em;
+                            text-align: center;
+                            color: $colorTexto;
+                            font-family: $fuente;
+                        }
+                    }
+                    div{
+                        text-align: center;
+                        a{
+                            text-decoration: none;
+                            i{
+                                margin: 0rem 0.5rem;
+                                color: $colorTexto;
+                                font-size: 1.2em;
+                            }
+                            i:hover{
+                                color: $colorAcento;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

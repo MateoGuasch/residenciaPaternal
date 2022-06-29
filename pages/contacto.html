@@ -25,24 +25,24 @@
                 <div class="container-fluid">
                     <a class="navbar-brand col-9 col-md-10 col-lg-7 col-xl-8 col-xxl-8" href="../index.html">
                         <img src="../img/logo.png" alt="Logo Residencia Paternal">
-                        <h1>Residencia Paternal</h1>
+                        <h1>Residencia <span>Paternal</span></h1>
                     </a>
                     <button class="navbar-toggler col-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                     <div class="collapse navbar-collapse col-1 col-md-1 col-lg-4 col-xl-3 col-xxl-2" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                                <a class="nav-link menuItem" aria-current="page" href="../index.html">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="nosotros.html">Nosotros</a>
+                                <a class="nav-link menuItem" href="nosotros.html">Nosotros</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link menuItem" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Imágenes
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu dropDown" aria-labelledby="navbarDropdown">
                                     <li>
                                         <a class="dropdown-item" href="dropDown/habitaciones.html">Habitaciónes</a>
                                     </li>
@@ -52,10 +52,10 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                                <a class="nav-link menuItem" href="ubicacion.html">Ubicación</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="contacto.html">Contacto</a>
+                                <a class="nav-link activeRojo menuItem" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -64,18 +64,22 @@
         </header>
 
         <main class="backgroundImage">
-            <div class="container">
+            <div class="container contactoContainer">
                 <div>
                     <div>
                         <h2>Contacto</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, illo fuga. Corrupti, aliquam quaerat ullam quos molestias quasi laborum, sint cupiditate minima, quisquam excepturi nam repudiandae a nostrum obcaecati voluptatem.</p>
+                        <p>Si queres realizar alguna consulta podes hacerla tocando en  alguno de los siguientes botones</p>
                     </div>
                     <div>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://wa.me/5491122770041" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/residenciapaternal/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, illo fuga. Corrupti, aliquam quaerat ullam quos molestias quasi laborum, sint cupiditate minima, quisquam excepturi nam repudiandae a nostrum obcaecati voluptatem.</p>
+                        <p>ó, podes dejarnos tu inquietud completando el siguiete formulario.</p>
                     </div>
                 </div>
                 <div>
@@ -86,12 +90,8 @@
                                 <input type="text" name="nombre" placeholder="Dejanos tu Nombre">
                             </div>
                             <div>
-                                <label for="mail">E-mail</label>
-                                <input type="email" name="mail" placeholder="Dejanos tu casilla de correo electronico">
-                            </div>
-                            <div>
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" name="telefono" placeholder="Dejanos tu numero de teléfono">
+                                <label for="tel">Teléfono</label>
+                                <input type="tel" name="tel" placeholder="Dejanos tu número">
                             </div>
                             <div>
                                 <label for="consulta">Consulta</label>
@@ -108,36 +108,41 @@
         
         <footer>
             <div class="container">
-                <div>
-                    <div>
+                <div class="info">
+                    <div class="logo">
                         <img src="../img/logo.png" alt="Logo Residencia Paternal">
                     </div>
-                    <div>
+                    <div class="direccion">
                         <h3>Dirección</h3>
                         <p>Bolivia 1838,</p>
                         <p>(C1416ANR) - CABA</p>
                         <p>Piso: 1°</p> 
                         <p>Buenos Aires - Argentina</p>    
                     </div>
-                    <div>
+                    <div class="contacto">
                         <h3>Contactate con nosotros</h3>
+                        <p>Mail</p>
                         <a href="mailto:residenciapaternal@gmail.com">residenciapaternal@gmail.com</a>
                         <p>Telefono/Whatsapp: 
                             <a href="tel:+5401122770041">(+54) 11-2277-0041</a>
                         </p>
                     </div>
-                    <div>
+                    <div class="links">
                         <h3>Links</h3>
                         <a href="info.html">Información Útil</a>
                     </div>
                 </div>
-                <div>
-                    <div>
+                <div class="copy">
+                    <div class="borderTop">
                         <h4>&copy; Copyright 2022 Residencia Paternal - All Rights Reserved</h4>
                     </div>
                     <div>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-instagram"></i>
+                        <a href="https://wa.me/5491122770041" target="_blank">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/residenciapaternal/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
             </div>

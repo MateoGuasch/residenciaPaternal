@@ -27,14 +27,191 @@ p {
   color: antiquewhite;
   background-color: #c44536; }
 
+h3 {
+  font-family: "Poppins", "Roboto";
+  font-size: 1.3em;
+  color: #c44536;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline; }
+
+@media screen and (max-width: 374px) {
+  nav div a h1 span {
+    display: block; } }
+
 html body {
   background-color: #95d5b2; }
   html body header {
     background-color: #52b788; }
+    html body header nav div a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html body header nav div a img {
+        width: 20%; }
+      html body header nav div a h1 {
+        font-family: "Cinzel", "Roboto";
+        color: antiquewhite;
+        font-weight: bold;
+        margin: 0.25rem;
+        font-size: 1em; }
+    html body header nav div button i {
+      color: antiquewhite; }
+    html body header nav div div ul li .menuItem {
+      font-family: "Cinzel", "Roboto";
+      color: antiquewhite;
+      text-align: center; }
+    html body header nav div div ul li .menuItem:hover {
+      color: #c44536;
+      font-weight: bold;
+      text-decoration: underline; }
+    html body header nav div div ul li .activeRojo {
+      color: #c44536;
+      font-weight: bold;
+      text-decoration: underline; }
+    html body header nav div div ul li .dropDown {
+      background-color: #52b788;
+      border: none; }
+      html body header nav div div ul li .dropDown li a {
+        font-family: "Cinzel", "Roboto";
+        color: antiquewhite;
+        text-align: center; }
+      html body header nav div div ul li .dropDown li a:hover {
+        color: #c44536;
+        font-weight: bold;
+        text-decoration: underline; }
+      html body header nav div div ul li .dropDown li .activeRojo {
+        color: #c44536;
+        font-weight: bold;
+        text-decoration: underline; }
+  html body main .mainContainer {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; }
   html body main .container div h2 {
     color: #c44536;
     font-family: "Poppins", "Roboto";
     font-weight: bold;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    margin-top: 1rem; }
+  html body main .container div .flecha {
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 0.5rem 1rem;
     text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  html body main #nuestrosServicios div {
+    text-align: center; }
+    html body main #nuestrosServicios div i {
+      color: #c44536;
+      font-weight: bold;
+      font-size: 3em;
+      margin: 0.5rem 1rem;
+      text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  html body main .dropDownContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; }
+    html body main .dropDownContainer div img {
+      width: 100%;
+      margin: 2rem 0rem;
+      border: 4px solid antiquewhite; }
+  html body .contactoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center; }
+    html body .contactoContainer div {
+      text-align: center; }
+      html body .contactoContainer div a {
+        text-decoration: none; }
+        html body .contactoContainer div a i {
+          margin: 0rem 0.5rem;
+          color: antiquewhite;
+          font-size: 2em; }
+        html body .contactoContainer div a i:hover {
+          color: #c44536;
+          font-weight: bold; }
+    html body .contactoContainer form fieldset div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around; }
+      html body .contactoContainer form fieldset div label {
+        font-family: "Poppins", "Roboto";
+        color: antiquewhite;
+        font-weight: bold; }
+      html body .contactoContainer form fieldset div .button {
+        margin: 1rem 0rem; }
+      html body .contactoContainer form fieldset div textarea {
+        height: 5rem;
+        width: 100%; }
+  html body .infoContainer {
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-left: 4px solid #c44536; }
+    html body .infoContainer strong {
+      color: #c44536;
+      font-family: "Poppins", "Roboto"; }
+    html body .infoContainer p {
+      text-align: start; }
+      html body .infoContainer p a {
+        color: #c44536; }
+    html body .infoContainer .sangria {
+      margin: 2rem; }
   html body footer {
     background-color: #52b788; }
+    html body footer .container .info .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html body footer .container .info .logo img {
+        width: 20%;
+        margin-top: 1rem; }
+    html body footer .container .info .direccion {
+      margin: 1rem 0rem; }
+      html body footer .container .info .direccion p {
+        margin: 0; }
+    html body footer .container .info .contacto {
+      margin: 1rem 0rem; }
+      html body footer .container .info .contacto a {
+        text-decoration: none;
+        color: #c44536;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      html body footer .container .info .contacto p a {
+        display: block; }
+    html body footer .container .info .links a {
+      text-decoration: none;
+      color: #c44536;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    html body footer .container .copy .borderTop {
+      margin-top: 1rem;
+      border-top: 1px solid antiquewhite;
+      padding-top: 1rem; }
+      html body footer .container .copy .borderTop h4 {
+        font-size: 1em;
+        text-align: center;
+        color: antiquewhite;
+        font-family: "Poppins", "Roboto"; }
+    html body footer .container .copy div {
+      text-align: center; }
+      html body footer .container .copy div a {
+        text-decoration: none; }
+        html body footer .container .copy div a i {
+          margin: 0rem 0.5rem;
+          color: antiquewhite;
+          font-size: 1.2em; }
+        html body footer .container .copy div a i:hover {
+          color: #c44536;
+          font-weight: bold; }

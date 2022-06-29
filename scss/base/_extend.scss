@@ -29,3 +29,12 @@
     color: $colorTexto;
     background-color: $colorAcento;
 }
+
+%h3{
+    font-family: $fuente;
+    font-size: 1.3em;
+    color: $colorAcento;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
