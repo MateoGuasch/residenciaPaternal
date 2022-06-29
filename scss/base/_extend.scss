@@ -1,0 +1,31 @@
+%backgroundImage{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0,0.5),
+        rgba(0, 0, 0,0.5)
+    ),
+    url(../img/backgroundImageMobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+%p{
+    color: $colorTexto;
+    font-family: $fuente;
+    font-weight: bold;
+    margin: 0.5rem 1rem;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+%button{
+    font-family:$fuente;
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
+    border-radius: 1rem;
+    border: 0.15rem solid rgba(0, 0, 0,0.5);
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    color: $colorTexto;
+    background-color: $colorAcento;
+}

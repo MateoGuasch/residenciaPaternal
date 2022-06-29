@@ -1,0 +1,50 @@
+// RESET
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORTS
+@import "base/variables";
+@import "base/mixins";
+@import "base/extend";
+@import "base/medias";
+
+// ESTILOS GENERALES
+.backgroundImage{
+    @extend %backgroundImage
+};
+
+p{
+    @extend %p
+};
+
+.button{
+    @extend %button
+};
+
+// NESTING
+html{
+    body{
+        background-color: $colorSecundario;
+        header{
+            background-color: $colorPrincipal;
+        }
+        main{
+            .container{
+                div{
+                    h2{
+                        color: $colorAcento;
+                        font-family: $fuente;
+                        font-weight: bold;
+                        text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+        }
+        footer{
+            background-color: $colorPrincipal;
+        }
+    }
+}

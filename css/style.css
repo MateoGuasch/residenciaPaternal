@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.backgroundImage {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/backgroundImageMobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+p {
+  color: antiquewhite;
+  font-family: "Poppins", "Roboto";
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+  text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  text-align: center; }
+
+.button {
+  font-family: "Poppins", "Roboto";
+  font-weight: bold;
+  padding: 0.8rem 1.6rem;
+  border-radius: 1rem;
+  border: 0.15rem solid rgba(0, 0, 0, 0.5);
+  box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+  color: antiquewhite;
+  background-color: #c44536; }
+
+html body {
+  background-color: #95d5b2; }
+  html body header {
+    background-color: #52b788; }
+  html body main .container div h2 {
+    color: #c44536;
+    font-family: "Poppins", "Roboto";
+    font-weight: bold;
+    text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  html body footer {
+    background-color: #52b788; }
