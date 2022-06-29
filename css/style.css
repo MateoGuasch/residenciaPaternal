@@ -39,6 +39,35 @@ h3 {
   nav div a h1 span {
     display: block; } }
 
+@media screen and (min-width: 768px) {
+  main .mainContainer div iframe {
+    width: 500px; }
+  main .contactoContainer div form fieldset div input {
+    width: 500px; }
+  main .contactoContainer div form fieldset div .button {
+    width: 250px; }
+  footer .container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: start; }
+    footer .container .info .logo {
+      margin: auto;
+      margin: 0rem 0.5rem; }
+    footer .container .info .links {
+      margin: 0rem 0.5rem; }
+      footer .container .info .links h3 {
+        margin-top: 1.1rem;
+        margin-bottom: 2.5rem; }
+      footer .container .info .links a {
+        margin: auto; } }
+
+@media screen and (min-width: 1200px) {
+  main .mainContainer div iframe {
+    width: 700px; }
+  main .dropDownContainer div {
+    width: 700px; } }
+
 html body {
   background-color: #95d5b2; }
   html body header {
@@ -46,9 +75,12 @@ html body {
     html body header nav div a {
       display: flex;
       justify-content: center;
-      align-items: center; }
-      html body header nav div a img {
-        width: 20%; }
+      align-items: center;
+      justify-content: start; }
+      html body header nav div a div {
+        width: 40px; }
+        html body header nav div a div img {
+          width: 20%; }
       html body header nav div a h1 {
         font-family: "Cinzel", "Roboto";
         color: antiquewhite;
@@ -103,6 +135,8 @@ html body {
     font-size: 3em;
     margin: 0.5rem 1rem;
     text-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  html body main #nuestrosServicios .nuestrosServicios {
+    margin: auto; }
   html body main #nuestrosServicios div {
     text-align: center; }
     html body main #nuestrosServicios div i {
@@ -126,7 +160,9 @@ html body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    text-align: center; }
+    justify-content: center;
+    text-align: center;
+    height: 85vh; }
     html body .contactoContainer div {
       text-align: center; }
       html body .contactoContainer div a {
@@ -173,7 +209,6 @@ html body {
       justify-content: center;
       align-items: center; }
       html body footer .container .info .logo img {
-        width: 20%;
         margin-top: 1rem; }
     html body footer .container .info .direccion {
       margin: 1rem 0rem; }
